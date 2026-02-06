@@ -32,7 +32,7 @@ RUN mkdir $DATA_DIR && \
 	mkdir -p $DATA_DIR/".local/share/Arma 3" && mkdir -p $DATA_DIR/".local/share/Arma 3 - Other Profiles" && \
 	ulimit -n 2048
 
-ADD /scripts/ /opt/scripts/
+COPY /scripts/ /opt/scripts/
 RUN chmod -R 770 /opt/scripts/
 
 #Server Start
